@@ -25,7 +25,7 @@ function Home() {
     "Gaming",
     "Comedy",
   ];
-  const socket = io('http://localhost:4000');
+  const socket = io('https://youtube-clone-2ydw.onrender.com:10000');
 
 
   

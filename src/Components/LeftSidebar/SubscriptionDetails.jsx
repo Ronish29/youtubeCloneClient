@@ -9,7 +9,7 @@ const SubscriptionDetails = ({chanelId}) => {
     const CurrentUser = useSelector(state => state.currentUserReducer);
 
     useEffect(() => {
-        fetch(`http://localhost:4000/chanel/chanelDetails/${chanelId}`,{
+        fetch(`https://youtube-clone-2ydw.onrender.com:10000/chanel/chanelDetails/${chanelId}`,{
             headers: {
                 'Authorization': `Bearer ${CurrentUser.token}`,
                 'Content-Type': 'application/json'

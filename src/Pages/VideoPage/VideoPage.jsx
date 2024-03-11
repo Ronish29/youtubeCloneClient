@@ -45,7 +45,7 @@ function VideoPage() {
 
   const fetchUserDetails = async () => {
     try {
-      const response = await fetch('http://localhost:4000/user/getUserDetails', {
+      const response = await fetch('https://youtube-clone-2ydw.onrender.com:10000/user/getUserDetails', {
         headers: {
           'Authorization': `Bearer ${CurrentUser.token}`
         }
@@ -149,7 +149,7 @@ function VideoPage() {
                 <div className="container2_videoPage">
                   <div className="video_display_screen_videoPage">
                     <video
-                      src={`http://localhost:4000/${vv?.filePath}?quality=${selectedQuality}`}
+                      src={`https://youtube-clone-2ydw.onrender.com:10000/${vv?.filePath}?quality=${selectedQuality}`}
                       className={"video_ShowVideo_videoPage"}
                       controls
                     // autoPlay

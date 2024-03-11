@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: `http://localhost:4000/` });
+const API = axios.create({ baseURL: `https://youtube-clone-2ydw.onrender.com:10000/` });
 // const API = axios.create({ baseURL: `https://youtubeclone5031.herokuapp.com/` });
 
 const getUserFromLocalStorage = () => {

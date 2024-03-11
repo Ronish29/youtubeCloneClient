@@ -44,7 +44,7 @@ const CreatorStudio = () => {
       formData.append('video', videoFile);
       formData.append('colorTone', colorTone);
 
-      const response = await fetch('http://localhost:4000/video/tempUpload', {
+      const response = await fetch('https://youtube-clone-2ydw.onrender.com:10000/video/tempUpload', {
         method: 'POST',
         body: formData
       });
@@ -173,7 +173,7 @@ const CreatorStudio = () => {
   });
 
   const fetchTempVideos = async () => {
-    const fetchVideos = await fetch('http://localhost:4000/video/tempvideos', {
+    const fetchVideos = await fetch('https://youtube-clone-2ydw.onrender.com:10000/video/tempvideos', {
     });
     const response = await fetchVideos.json();
     setTempVideos(response);
@@ -184,7 +184,7 @@ const CreatorStudio = () => {
     console.log(selectedVideo); // Check the selected video object
     setSelectedVideo(selectedVideo);
     if (selectedVideo && selectedVideo.filePath) {
-      const filePathWithBaseUrl = `http://localhost:4000/${selectedVideo.filePath}`;
+      const filePathWithBaseUrl = `https://youtube-clone-2ydw.onrender.com:10000/${selectedVideo.filePath}`;
       setPreviewUrl(filePathWithBaseUrl);
       console.log('Selected video preview URL:', filePathWithBaseUrl);
       const fetchVideoBlob = async () => {
@@ -361,7 +361,7 @@ const CreatorStudio = () => {
                   />
                   <label htmlFor={`video_${index}`}>
                     {video.filePath && (
-                      <video src={`http://localhost:4000/${video?.filePath}`} controls width="400px" height="auto" />
+                      <video src={`https://youtube-clone-2ydw.onrender.com:10000/${video?.filePath}`} controls width="400px" height="auto" />
                     )}
                   </label>
                 </div>

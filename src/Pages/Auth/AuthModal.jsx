@@ -67,7 +67,7 @@ const AuthModal = ({ setAuthModal }) => {
     e.preventDefault();
 
 
-    axios.post('http://localhost:4000/user/signup', {
+    axios.post('https://youtube-clone-2ydw.onrender.com:10000/user/signup', {
       signUpemail : signUpEmail,
       signUppassword : signUpPassword,
       cnfPassword : confirmPassword,

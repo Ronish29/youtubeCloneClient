@@ -1,0 +1,18 @@
+.chanel_details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none; 
+    color: grey; 
+}
+
+.chanel_details p {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 100%;
+}
+
+.chanel_details span{
+    color: white;
+}
